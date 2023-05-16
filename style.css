@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@200&family=Josefin+Sans&family=Roboto:wght@900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(blueMountain.jpg);
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+/* the codes below are work for the link buttons at the pagehead (Scial Links Codes Open)*/
+
+.mySocialHead {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    top: 1%;
+}
+.mySocial {
+    text-decoration-line: underline ;
+    padding: 20px;
+    border: none;
+    border-radius: 6px;
+    background: none;
+    transition: color 0.3s linear;
+    cursor: pointer;
+    position: relative;
+    border: solid 3px #000;
+}
+.mySocial:hover {
+    color: #fff;
+    text-decoration: none;
+    border: solid 3px #fff;
+}
+
+.mySocial::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    position: absolute;
+    transform-origin: 0 0;
+    z-index: -1;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+
+}
+.youtube::before {
+    transform: scaleX(0);
+    background: #ff0000;
+}
+.youtube:hover::before {
+    transform: scaleX(1);
+}
+.twitter::before {
+    transform: scale(0);
+    background: #4285f4;
+}
+.twitter:hover::before {
+    transform: scale(1);
+}
+.instagram::before {
+    transform: scaleY(0);
+    background: linear-gradient(90deg, purple, #ed2496, #ed1212, #acf70a);
+}
+.instagram:hover::before {
+    transform: scaleY(1);
+}
+
+/* Social Links Codes Close */
+
+/* The below codes are work for Welcom Text (Welcom Open */
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 10%;
+    font-family: 'Squada One', cursive;
+}
+.greetingtext {
+    text-align: center;
+    width: 70%;
+    height: 80px;
+}
+.welcom {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600px;
+    animation: glow 0.55s ease-in-out infinite alternate-reverse;
+}
+@keyframes glow {
+    100% {
+        text-shadow: 
+        0 0 15px #800080,
+        0 0 30px #800080,
+        0 0 50px #800080,
+        0 0 60px #ff0000,
+        0 0 70px #ff0000,
+        0 0 80px #90ee90,
+        0 0 100px #90ee90
+        ;
+    }
+    0% {
+        text-shadow: 
+        0 0 10px #f09,
+        0 0 15px #f09,
+        0 0 35px #f09,
+        0 0 45px #ff0000,
+        0 0 55px #ff0000,
+        0 0 65px #90ee90,
+        0 0 85px #90ee90
+        ;
+    }
+}
+
+/* (Welcom Close) */
+
+/* GetIn (open) */
+.getinContainer {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 60%;
+    font-family: 'Squada One', cursive;
+}
+.getin {
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    color: #fff;
+    border: solid 3px #fff;
+    border-radius: 5px;
+    padding:0px 7px;
+    cursor: pointer;
+    box-shadow: #000;
+}
+.getin:hover {
+    border-color: #f09;
+    color: #f09;
+    text-shadow: 
+    0 0 15px #f09,
+    0 0 30px #f09,
+    0 0 50px #f09,
+    0 0 60px #ff0000,
+    0 0 80px #f09,
+    0 0 90px #f09,
+    0 0 110px #f09,
+    0 0 160px #f09,;
+}
+
+
+/* GetIn (Close)
